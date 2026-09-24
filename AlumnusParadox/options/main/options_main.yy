@@ -8,7 +8,7 @@
   "option_collision_compatibility":false,
   "option_copy_on_write_enabled":false,
   "option_draw_colour":4294967295,
-  "option_gameguid":"34e6199c-cd41-4593-95b3-3b991b0ae179",
+  "option_gameguid":"1989a471-0ed0-4e7b-b0e5-2a38d29dcd7b",
   "option_gameid":"0",
   "option_game_speed":60,
   "option_legacy_json_parsing":false,
