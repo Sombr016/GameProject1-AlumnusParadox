@@ -18,5 +18,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_timewatch","order":1,"path":"objects/obj_timewatch/obj_timewatch.yy",},
+    {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
   ],
 }
