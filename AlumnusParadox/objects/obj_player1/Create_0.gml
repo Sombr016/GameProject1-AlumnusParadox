@@ -1,0 +1,1 @@
+walltilemap = layer_tilemap_get_id("RoomTiles");
