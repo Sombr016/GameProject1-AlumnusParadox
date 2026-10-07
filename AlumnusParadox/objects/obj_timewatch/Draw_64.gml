@@ -11,3 +11,4 @@ display_clock = string(minutes_left) + ":" + seconds_text
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_text(display_get_gui_width()/2, 50, "Time Remaining: " + display_clock)
+//draw_text(display_get_gui_width()/2, 60, "Total Loops: " + string(total_loops))

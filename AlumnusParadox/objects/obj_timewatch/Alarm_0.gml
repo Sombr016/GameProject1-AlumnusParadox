@@ -1,6 +1,7 @@
 
 //checking on timer
 if (total_seconds <= 0) {
+	total_loops++;
 	room_restart()
 }
 else {

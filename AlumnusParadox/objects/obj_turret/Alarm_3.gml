@@ -1,0 +1,2 @@
+//BULLET EVENT
+canFire = true;
