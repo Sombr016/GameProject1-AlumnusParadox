@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_itemparent","path":"objects/obj_itemparent/obj_itemparent.yy",},},
+    {"id":{"name":"obj_movingBlocks","path":"objects/obj_movingBlocks/obj_movingBlocks.yy",},},
     {"id":{"name":"obj_otherID","path":"objects/obj_otherID/obj_otherID.yy",},},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},},
     {"id":{"name":"obj_timewatch","path":"objects/obj_timewatch/obj_timewatch.yy",},},
@@ -44,6 +45,7 @@
     {"id":{"name":"InventoryItem","path":"scripts/InventoryItem/InventoryItem.yy",},},
     {"id":{"name":"placeholderwalltiles_sprite","path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},},
     {"id":{"name":"player1","path":"sprites/player1/player1.yy",},},
+    {"id":{"name":"spr_movingBlock","path":"sprites/spr_movingBlock/spr_movingBlock.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_run_down","path":"sprites/spr_player_run_down/spr_player_run_down.yy",},},
     {"id":{"name":"spr_player_run_left","path":"sprites/spr_player_run_left/spr_player_run_left.yy",},},

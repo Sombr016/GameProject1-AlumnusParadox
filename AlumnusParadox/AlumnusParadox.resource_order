@@ -19,9 +19,11 @@
   "ResourceOrderSettings":[
     {"name":"obj_inventory","order":3,"path":"objects/obj_inventory/obj_inventory.yy",},
     {"name":"obj_itemparent","order":4,"path":"objects/obj_itemparent/obj_itemparent.yy",},
+    {"name":"obj_movingBlocks","order":6,"path":"objects/obj_movingBlocks/obj_movingBlocks.yy",},
     {"name":"obj_otherID","order":5,"path":"objects/obj_otherID/obj_otherID.yy",},
     {"name":"obj_timewatch","order":1,"path":"objects/obj_timewatch/obj_timewatch.yy",},
     {"name":"placeholderwalltiles_sprite","order":2,"path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},
+    {"name":"spr_movingBlock","order":8,"path":"sprites/spr_movingBlock/spr_movingBlock.yy",},
     {"name":"spr_player_idle","order":3,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"spr_player_run_down","order":7,"path":"sprites/spr_player_run_down/spr_player_run_down.yy",},
     {"name":"spr_player_run_left","order":5,"path":"sprites/spr_player_run_left/spr_player_run_left.yy",},

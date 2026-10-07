@@ -29,3 +29,16 @@ if (!(keyboard_check(vk_up) || keyboard_check(vk_down) || keyboard_check(vk_left
 //Clamps movement to be bound within the playable area.
 x = clamp(x,0,room_width);
 y = clamp(y,0,room_height);  
+
+
+//Player movement
+moveRight = keyboard_check(vk_right) //Moves playr to the right
+moveLeft = keyboard_check(vk_left)  //Moves player to the left
+moveDown = keyboard_check(vk_down)  //Moves player down
+moveUp = keyboard_check(vk_up) //Moves player up
+
+xSpeed =( moveRight - moveLeft) * moveSpeed //The rate of speed the player is moving left or right
+ySpeed = (moveDown - moveUp) * moveSpeed //The rate of speed the player is moving up or down
+
+x += xSpeed //The x-coordinate position changes as the player moves
+y += ySpeed //The y-coordinate changes as the [layer moves
