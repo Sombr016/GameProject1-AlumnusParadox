@@ -1,17 +1,13 @@
 /// @description player control & target scanning
 
-//Exit the code if the player's currently dancing; let them dance in peace.
-if state == States.dancing /* TODO: check that 'state' has an appropriate value here (replace false) */ exit;
-
 #region scanning
 
-if state == States.regular /* TODO: check that 'state' has an appropriate value here (replace false) */ {
+if state == States.regular {
 	var bestDistance = maxGrabDistance
 	grabTarget = noone;
 	
 	//This checks every instance of obj_movingBlocks, and choses the one closest to this instance
-	//Note: since bestDistance is initialized to the value of 'maxGrabDistance',
-	//objects must be closer than 'maxGrabDistance' to be considered.
+	//Note: since bestDistance is initialized to the value of 'maxGrabDistance', objects must be closer than 'maxGrabDistance' to be considered.
 	with obj_movingBlocks{
 		//This code is being executed within an instance of obj_movingBlocks (every instance, for that matter)
 		//since bestDistance is declared as a local variable (it's yellow), we still have access to it in this code.
@@ -29,35 +25,17 @@ if state == States.regular /* TODO: check that 'state' has an appropriate value 
 
 #region controls
 
-//pressing Space makes the player dance
-if keyboard_check_pressed(vk_space)
-{
-	#region dancing
-	//TODO: set 'state' to the appropriate value
-	state = States.dancing
-	hspeed = 0
-	vspeed = 0
-			
-	sprite_index = spr_player_dance
-	image_speed = 1
-	image_index = 0 //reset image_index to start at the beginning of the animation
-	image_xscale = 1
-	
-	#endregion
-	return; //return early - we don't care about the rest
-}
 //pressing 'E' stops or starts pushing a block
-else if keyboard_check_pressed(ord("E"))
+if keyboard_check_pressed(ord("E"))
 {
 	#region push stop/start
 	
 	//If we're already pushing, stop doing it.
-	
-	if state == States.pushing /* TODO: check that 'state' has an appropriate value here (replace false) */ {
+	if state == States.pushing {
 		
-		//	TODO: set 'state' to the appropriate value
 		state = States.regular
-		//	TODO: make grabTarget stop moving (use a 'with' statement to get started)
+		
+		//stop the block from moving
 		with obj_movingBlocks{
 			hspeed = 0
 			vspeed = 0
@@ -66,7 +44,6 @@ else if keyboard_check_pressed(ord("E"))
 	//If scanning (see above) found a grab target, start pushing it.
 	else if instance_exists(grabTarget){
 		
-		//	TODO: set 'state' to the appropriate value
 		state = States.pushing
 		
 		//Calculate grabDirection based on which axis you're closest to the grabTarget on
@@ -81,25 +58,30 @@ else if keyboard_check_pressed(ord("E"))
 
 #region speed calculations
 
+//Player direction and speed
 var inputVect_x = (keyboard_check(vk_right)-keyboard_check(vk_left)),
 	inputVect_y = (keyboard_check(vk_down)-keyboard_check(vk_up)),
 	speedSpeed = walkSpeed,
 	hCancel = 1, vCancel = 1;
-		
-if state == States.pushing  /* TODO: check that 'state' has an appropriate value here (replace false) */ {
+	//hCanvel and vCancel control when we want the player to be able to move
+	
+//Change speed if player is pushing
+if state == States.pushing {
 	speedSpeed = pushSpeed;
 	
 	//grabDirection limits movement to one axis
 	if grabDirection = GrabAxis.vertical then hCancel = 0
 	if grabDirection = GrabAxis.horizontal then vCancel = 0
 }
+
+//Horizontal wall collision for player
 if(!tilemap_get_at_pixel(walltilemap, x + (inputVect_x*sprite_width/2) + (inputVect_x * speedSpeed), y)){
  hCancel = 1
 }
 else{
 hCancel = 0
 }
-
+//Vertical  wall collision for player
 if(!tilemap_get_at_pixel(walltilemap, x, y + (inputVect_y*sprite_height/2)+(inputVect_y * speedSpeed))){
  vCancel = 1
 }
@@ -152,10 +134,11 @@ if (state == States.pushing) with grabTarget {
 		vspeed = 0
 	}
 	
+	//Vertical wall collision for block
 	if(tilemap_get_at_pixel(other.walltilemap, x, y + (inputVect_y*sprite_height/2)+vspeed)){
 		vspeed = 0
 	} 
-	
+	//Horizontl wall collision for block
 	if(tilemap_get_at_pixel(other.walltilemap, x + hspeed +(inputVect_x*sprite_height/2), y )){
 		hspeed = 0
 	}

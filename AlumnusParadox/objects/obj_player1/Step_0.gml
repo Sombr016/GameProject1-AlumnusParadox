@@ -1,5 +1,5 @@
-//	This code provides a keyboard shortcut to toggle
-//	between full and windowed screen.
+/// @description fullscreen controls
+//	This code provides a keyboard shortcut to toggle between full and windowed screen.
 if (keyboard_check(vk_alt) && (keyboard_check_pressed(ord("F"))))
 {
 	if window_get_fullscreen()
