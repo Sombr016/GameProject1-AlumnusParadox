@@ -36,7 +36,7 @@
     {"$GMObjectProperty":"v2","%Name":"pushSpeed","filters":[],"listItems":[],"multiselect":false,"name":"pushSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"pushForce","filters":[],"listItems":[],"multiselect":false,"name":"pushForce","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"pushTime","filters":[],"listItems":[],"multiselect":false,"name":"pushTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"maxGrabDistance","filters":[],"listItems":[],"multiselect":false,"name":"maxGrabDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"maxGrabDistance","filters":[],"listItems":[],"multiselect":false,"name":"maxGrabDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
