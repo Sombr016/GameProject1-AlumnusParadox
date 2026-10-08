@@ -45,6 +45,7 @@
     {"id":{"name":"InventoryItem","path":"scripts/InventoryItem/InventoryItem.yy",},},
     {"id":{"name":"placeholderwalltiles_sprite","path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},},
     {"id":{"name":"player1","path":"sprites/player1/player1.yy",},},
+    {"id":{"name":"spr_E","path":"sprites/spr_E/spr_E.yy",},},
     {"id":{"name":"spr_movingBlock","path":"sprites/spr_movingBlock/spr_movingBlock.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_run_down","path":"sprites/spr_player_run_down/spr_player_run_down.yy",},},
