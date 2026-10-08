@@ -10,14 +10,7 @@ if state == States.regular /* TODO: check that 'state' has an appropriate value 
 		sprite_index = spr_player_run_left
 	} else if hspeed > 0 {
 		sprite_index = spr_player_run_right
+	} else if (hspeed == 0 && vspeed == 0){
+		sprite_index = spr_player_idle
 	}
-}
-
-
-//animation freezes in place if you're not dancing and not moving
-if state == States.regular /* TODO: check that 'state' has an appropriate value here (replace false) */
-	&& (vspeed = 0 and hspeed = 0) {
-	image_speed = 0	
-} else {
-	image_speed = 1	
 }

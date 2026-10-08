@@ -93,9 +93,21 @@ if state == States.pushing  /* TODO: check that 'state' has an appropriate value
 	if grabDirection = GrabAxis.vertical then hCancel = 0
 	if grabDirection = GrabAxis.horizontal then vCancel = 0
 }
+if(!tilemap_get_at_pixel(walltilemap, x + (inputVect_x*sprite_width/2) + (inputVect_x * speedSpeed), y)){
+ hCancel = 1
+}
+else{
+hCancel = 0
+}
+
+if(!tilemap_get_at_pixel(walltilemap, x, y + (inputVect_y*sprite_height/2)+(inputVect_y * speedSpeed))){
+ vCancel = 1
+}
+else{
+vCancel = 0
+}
 
 hspeed = inputVect_x * speedSpeed * hCancel
-//	TODO: repeat this speed calculation for vspeed
 vspeed = inputVect_y * speedSpeed * vCancel
 
 /*
@@ -131,13 +143,21 @@ To understand this hspeed & vspeed operation, break it down into parts:
 
 #region pushing
 //If pushing, transfer the player's speed to the object they're pushing
-if (state == States.pushing /* TODO: check that 'state' has an appropriate value here (replace false) */) with grabTarget {
+if (state == States.pushing) with grabTarget {
 	if !place_meeting(x + other.hspeed, y + other.hspeed, obj_movingBlocks){
 		hspeed = other.hspeed
 		vspeed = other.vspeed
 	} else {
 		hspeed = 0
 		vspeed = 0
+	}
+	
+	if(tilemap_get_at_pixel(other.walltilemap, x, y + (inputVect_y*sprite_height/2)+vspeed)){
+		vspeed = 0
+	} 
+	
+	if(tilemap_get_at_pixel(other.walltilemap, x + hspeed +(inputVect_x*sprite_height/2), y )){
+		hspeed = 0
 	}
 }
 #endregion
