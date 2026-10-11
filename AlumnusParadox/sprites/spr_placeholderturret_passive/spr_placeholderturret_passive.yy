@@ -25,8 +25,6 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"MovingBlock",
-    "path":"folders/Sprites/MovingBlock.yy",
     "name":"Sprites",
     "path":"folders/Sprites.yy",
   },
