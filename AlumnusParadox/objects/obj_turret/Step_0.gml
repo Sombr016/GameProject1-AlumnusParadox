@@ -46,10 +46,9 @@ if (state == States.engaged) {
 			canFire = false;
 			alarm[3] = fire_rate;
 			bullet = instance_create_layer(x+(14*cos(-direction*(pi/180))),y+(14*sin(-direction*(pi/180))),"Instances",obj_turretbullet);
+			bullet = instance_create_layer(x,y,"Instances",obj_turretbullet);
 			bullet.direction = direction;
 			bullet.image_angle = direction;
-			bullet.image_xscale = bullet_scale;
-			bullet.image_yscale = bullet_scale;
 		}
 		if(targetbeam == noone && alarm[1] < 0) {
 			alarm[1] = 30;
