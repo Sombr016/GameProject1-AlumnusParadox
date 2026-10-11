@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"MovingBlock",
+    "path":"folders/Sprites/MovingBlock.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

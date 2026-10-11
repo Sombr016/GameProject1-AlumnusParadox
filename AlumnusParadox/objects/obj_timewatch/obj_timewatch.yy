@@ -14,7 +14,7 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -28,7 +28,11 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
+<<<<<<< Updated upstream
     {"$GMObjectProperty":"v2","%Name":"total_loops","filters":[],"listItems":[],"multiselect":false,"name":"total_loops","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+=======
+    {"$GMObjectProperty":"v2","%Name":"timer_limit","filters":[],"listItems":[],"multiselect":false,"name":"timer_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
+>>>>>>> Stashed changes
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
