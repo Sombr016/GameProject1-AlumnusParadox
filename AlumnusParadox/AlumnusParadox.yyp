@@ -15,6 +15,11 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+=======
+    {"$GMFolder":"","%Name":"PatrolBot","folderPath":"folders/Objects/PatrolBot.yy","name":"PatrolBot","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Turret","folderPath":"folders/Objects/Turret.yy","name":"Turret","resourceType":"GMFolder","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -62,6 +67,8 @@
     {"id":{"name":"spr_placeholderturret_active","path":"sprites/spr_placeholderturret_active/spr_placeholderturret_active.yy",},},
     {"id":{"name":"spr_placeholderturret_passive","path":"sprites/spr_placeholderturret_passive/spr_placeholderturret_passive.yy",},},
 =======
+    {"id":{"name":"spr_E","path":"sprites/spr_E/spr_E.yy",},},
+    {"id":{"name":"spr_movingBlock","path":"sprites/spr_movingBlock/spr_movingBlock.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_run_down","path":"sprites/spr_player_run_down/spr_player_run_down.yy",},},
