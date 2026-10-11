@@ -1,7 +1,4 @@
 draw_self();
-<<<<<<< Updated upstream
-draw_line_color(x,y,x+(beam_length*cos(-direction*(pi/180))),y+(beam_length*sin(-direction*(pi/180))),c_green,c_red)
-=======
 draw_set_alpha(line_alpha);
 draw_line_color(x,y,x+(beam_length*cos(-direction*(pi/180))),y+(beam_length*sin(-direction*(pi/180))),c_green,c_red)
 draw_set_alpha(1);
@@ -26,4 +23,3 @@ else {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 }
->>>>>>> Stashed changes
