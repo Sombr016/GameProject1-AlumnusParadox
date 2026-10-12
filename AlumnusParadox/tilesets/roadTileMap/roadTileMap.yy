@@ -4,8 +4,11 @@
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":6,
-    "SerialiseWidth":2,
-    "TileSerialiseData":[0,0,0,536870949,0,27,0,10,0,27,0,37,],
+    "SerialiseWidth":7,
+    "TileCompressedData":[
+      -8,0,29,536870949,0,4,5,6,7,0,27,0,13,14,15,16,0,10,0,22,23,24,25,0,27,0,31,32,33,34,0,37,-5,0,
+    ],
+    "TileDataFormat":1,
   },
   "name":"roadTileMap",
   "out_columns":9,
