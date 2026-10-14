@@ -1,3 +1,4 @@
+//Debug values to decrease certain variables.
 if(debug) {
 	if(keyboard_check_pressed(ord("E"))) {
 		vision_distance -= 50

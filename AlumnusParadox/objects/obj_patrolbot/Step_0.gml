@@ -8,7 +8,7 @@ Chasing State -> Bot will begin chasing the player around the playable area. If 
 far away from the Bot (or the Bot moves too far away from the patrolling area), then the Bot will
 enter the Searching State. If the Bot comes into contact with the player, then it will kill the player.
 
-
+This searching state
 Searching State -> The patrol bot will move towards the last known player location. Once there, the bot will stop moving and look around in an attempt to find the player. If the patrol bot finds the
 player again, then it will enter the Chasing State once again. If the patrol bot does NOT find the
 player, it will return to its patrolling state.
@@ -48,6 +48,7 @@ image_angle = direction;
 
 
 if(state == PatrolState.patrol) {
+	//If the target is found and the alarm isn't already active, activate the bot.
 	if(target != noone && alarm[0] < 0) {
 		alarm[0] = activation_time;
 	}
@@ -65,21 +66,25 @@ if(state == PatrolState.patrol) {
 	//}
 }
 if(state == PatrolState.chasing) {
+	//If the target isn't found and the alarm isn't set, then start the patrol alarm.
 	if(target == noone && alarm[1] < 0) {
 		alarm[1] = 120;
 	}
+	//If the target is found, then the patrol alarm is set inactive.
 	else if(target != noone){
 		alarm[1] = -1;
 	}
 	if(instance_exists(obj_player1)){
+		//Point towards the player.
 		direction = point_direction(x,y,obj_player1.x,obj_player1.y);
-		
+		//If the patrol bot collides with a wall or a moving block, then stop moving.
 		if(place_meeting((x + (walk_speed*sprite_width/2*cos(direction*(pi/180)))),(y + (walk_speed*sprite_height/2*sin(direction*(pi/180)))),[walltilemap,obj_movingBlocks])) {
 			vCancel = 0;
 		}
 		else {
 			vCancel = 1;
 		}
+		//Set the speed. Base Walk Speed * Chase Speed Multiplier * vCancel.
 		speed = walk_speed*chase_speed_mult*vCancel;
 	}
 }
