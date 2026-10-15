@@ -13,6 +13,10 @@ if state == States.regular || state == States.pushing {
 	} else if (hspeed == 0 && vspeed == 0){
 		sprite_index = spr_player_idle
 	}
+	if (vspeed != 0 || hspeed != 0) {
+		audio_listener_position(x, y, 0);
+		audio_listener_orientation(0, 0, 1, lengthdir_x(1, direction), lengthdir_y(1, direction), 0);
+	}
 }
 
 //Its the death state.
@@ -20,6 +24,11 @@ if state == States.death {
 	sprite_index = spr_player_idle;
 	if(deathtimer <= 0) {
 		deathtimer = 150
-		room_restart();
+		if(instance_exists(obj_timewatch)) {
+			obj_timewatch.total_seconds = 1;
+		}
+		else {
+			room_restart();
+		}
 	}
 }

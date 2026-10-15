@@ -34,6 +34,8 @@
     {"name":"path_patrol_main","order":1,"path":"paths/path_patrol_main/path_patrol_main.yy",},
     {"name":"rmd_main","order":2,"path":"rooms/rmd_main/rmd_main.yy",},
     {"name":"rmd_test","order":1,"path":"rooms/rmd_test/rmd_test.yy",},
+    {"name":"snd_killjoy","order":2,"path":"sounds/snd_killjoy/snd_killjoy.yy",},
+    {"name":"snd_tada","order":1,"path":"sounds/snd_tada/snd_tada.yy",},
     {"name":"placeholderwalltiles_sprite","order":2,"path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},
     {"name":"spr_change","order":16,"path":"sprites/spr_change/spr_change.yy",},
     {"name":"spr_E","order":9,"path":"sprites/spr_E/spr_E.yy",},

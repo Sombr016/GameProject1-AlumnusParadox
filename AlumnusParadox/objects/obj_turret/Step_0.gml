@@ -13,6 +13,7 @@ if (state == TurretStates.sentry) {
 		targetbeam = collision_line(x,y,x+(beam_length*cos(-direction*(pi/180))),y+(beam_length*sin(-direction*(pi/180))),obj_player1,false,false)
 		if(targetbeam != noone && alarm[0] < 0) {
 			state = TurretStates.engaged;
+			sound_instance = audio_play_sound_at(activation_sound_ref, x, y, 0, beam_length+50, 300, 1, false, 1);
 			canFire = false;
 			alarm[3] = activation_speed;
 			target = targetbeam;

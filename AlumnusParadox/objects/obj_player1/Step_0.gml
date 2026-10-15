@@ -22,4 +22,19 @@ if (keyboard_check_pressed(vk_anykey)) {
     } else {
         code1_pos = 0;
     }
+	if (keyboard_lastkey == code2[code2_pos]) {
+        code2_pos++;
+        if (code2_pos >= array_length(code2)) {
+            // Cheat triggered
+			if(isInvulnerable) {
+				isInvulnerable = false;
+			}
+			else {
+				isInvulnerable = true;
+			}
+            code2_pos = 0;
+        }
+    } else {
+        code2_pos = 0;
+    }
 }

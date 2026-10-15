@@ -9,6 +9,7 @@ disableReverse = false;
 state = TurretStates.sentry;
 
 
+
 target = noone;
 
 targetbeam = noone;

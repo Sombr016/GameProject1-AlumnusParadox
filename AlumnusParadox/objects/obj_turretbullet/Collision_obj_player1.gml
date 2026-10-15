@@ -1,2 +1,5 @@
 instance_destroy();
-other.state = States.death;
+if(!other.isInvulnerable) {	
+		other.state = States.death;
+		other.isDead = true;
+}

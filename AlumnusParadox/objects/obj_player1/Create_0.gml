@@ -1,5 +1,7 @@
 /// @description General setup
 walltilemap = layer_tilemap_get_id("RoomTiles");
+isInvulnerable = true;
+invulnerabilityTime = 0;
 
 
 //Player States
@@ -33,5 +35,10 @@ _uniColor = shader_get_uniform(player_rift_pull, "u_colour");
 _color    = [1.0, 1.0, 0.0, 0.5];
 // X (RED) Y (GREEN) Z (BLUE) W (OPACITY)
 
+//Increases the player movespeed.
 code1 = [vk_up, vk_right,vk_down,vk_down,vk_down];
 code1_pos = 0;
+
+//[TITLE CARD]
+code2 = [vk_up,vk_up,vk_up,vk_down,vk_down,vk_down];
+code2_pos = 0;

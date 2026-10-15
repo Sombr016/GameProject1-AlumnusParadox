@@ -92,7 +92,11 @@ vCancel = 0
 if(state == States.death) {
 	hCancel = 0;
 	vCancel = 0;
-	grabTarget = noone;
+	if(grabTarget != noone) {
+		grabTarget.vspeed = 0;
+		grabTarget.hspeed = 0;
+		grabTarget = noone;
+	}
 	deathtimer--;
 }
 

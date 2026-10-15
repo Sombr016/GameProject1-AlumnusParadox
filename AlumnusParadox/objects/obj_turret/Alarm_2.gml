@@ -1,4 +1,4 @@
-//STATE SEARCH -> SENTRY
+/// @description - STATE SEARCH -> SENTRY
 state = TurretStates.sentry;
 target = noone;
 //Recalculate the min and max rotation in correspondence to the

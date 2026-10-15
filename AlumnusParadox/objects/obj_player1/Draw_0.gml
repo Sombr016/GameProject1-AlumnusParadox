@@ -6,3 +6,4 @@ shader_set_uniform_f_array(_uniColor, _color);
 }
 draw_self();
 shader_reset();
+//draw_text(x,y-40,"Direction: "+string(direction));

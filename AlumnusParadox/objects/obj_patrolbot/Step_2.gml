@@ -1,4 +1,4 @@
-if(state == PatrolState.patrol) {
+if(state != PatrolState.teleporting) {
 	image_xscale = 0.5;
 	image_yscale = 0.5;
 	if(direction < 45) {
@@ -16,4 +16,9 @@ if(state == PatrolState.patrol) {
 	else {
 		sprite_index = spr_patrol_right;
 	}
+}
+else {
+	image_xscale = 0.5;
+	image_yscale = 0.5;
+	sprite_index = spr_patrol_idle;
 }

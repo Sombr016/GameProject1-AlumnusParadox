@@ -90,6 +90,7 @@ if(state == PatrolState.chasing) {
 	}
 }
 if(state == PatrolState.teleporting) {
+	speed = 0;
 	if(image_alpha <= 0) {
 		state = PatrolState.patrol;
 		path_start(path_ref,walk_speed,path_action_restart,true)

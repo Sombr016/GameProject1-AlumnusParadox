@@ -1,7 +1,14 @@
-
+/// @description Checks if timer runs out. If so, perform some operations.
 //checking on timer
 if (total_seconds <= 0) {
-	room_restart()
+	if(isPlayerDead) {
+		game_restart()
+	}
+	else {
+		total_seconds = timeloopduration;
+		room_restart();
+		alarm[0] = game_get_speed(gamespeed_fps);
+	}
 }
 else {
 	total_seconds -= 1;

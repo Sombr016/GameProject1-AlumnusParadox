@@ -1,4 +1,4 @@
-//STATE ENGAGED -> SEARCH
+/// @description - STATE ENGAGED -> SEARCH
 state = TurretStates.search;
 //Set the min and max rotation to correspond to the angle of the Search Cone.
 min_rotation = round(direction-(search_cone/2));

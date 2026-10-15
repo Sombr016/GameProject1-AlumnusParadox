@@ -3,7 +3,7 @@ if(sprite_index != spr_patrol_away) {
 }
 draw_set_alpha(1);
 //Visual representation of the viewing triangle.
-draw_set_color(c_yellow);
+draw_set_color(c_red);
 draw_set_alpha(0.2*image_alpha);
 //Got this code from reddit.
 //Source: https://www.reddit.com/r/gamemaker/comments/d6aa79/how_to_make_a_vision_cone_for_the_enemy/?solution=e55c9fb9834a878ce55c9fb9834a878c&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c3310504e796643cfc02afa089dc7c8f035e&jsc_orig_r=&solution=a1a359513035ceefa1a359513035ceef&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c331c9fec6024c6b6aa6cc84dfa653e12e3c&jsc_orig_r=

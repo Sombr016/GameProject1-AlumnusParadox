@@ -42,6 +42,9 @@
     {"$GMObjectProperty":"v2","%Name":"beam_length","filters":[],"listItems":[],"multiselect":false,"name":"beam_length","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"search_cone","filters":[],"listItems":[],"multiselect":false,"name":"search_cone","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"show_line","filters":[],"listItems":[],"multiselect":false,"name":"show_line","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"activation_sound_ref","filters":[
+        "GMSound",
+      ],"listItems":[],"multiselect":false,"name":"activation_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_tada","path":"sounds/snd_tada/snd_tada.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_tada","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

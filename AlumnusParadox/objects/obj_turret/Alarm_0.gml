@@ -1,2 +1,2 @@
-//STATE SENTRY -> ENGAGED
+/// @description - STATE SENTRY -> ENGAGED
 state = TurretStates.engaged;

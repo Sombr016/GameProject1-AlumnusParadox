@@ -1,2 +1,2 @@
-//BULLET EVENT
+/// @description - BULLET EVENT
 canFire = true;
