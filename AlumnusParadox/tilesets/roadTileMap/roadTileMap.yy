@@ -1,7 +1,9 @@
 {
   "$GMTileSet":"v1",
   "%Name":"roadTileMap",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"roof_autotile","closed_edge":false,"name":"roof_autotile","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,6,0,0,0,4,0,0,0,7,15,13,16,0,],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":6,
     "SerialiseWidth":7,

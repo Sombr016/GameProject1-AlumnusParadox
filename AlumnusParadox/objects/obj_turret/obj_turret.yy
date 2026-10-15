@@ -50,8 +50,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_turret_passive",
-    "path":"sprites/spr_turret_passive/spr_turret_passive.yy",
+    "name":"spr_rturret_inactive",
+    "path":"sprites/spr_rturret_inactive/spr_rturret_inactive.yy",
   },
   "spriteMaskId":null,
   "visible":true,
