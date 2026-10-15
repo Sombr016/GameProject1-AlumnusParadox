@@ -4,7 +4,7 @@ Right now, only the patrol and chasing state are the ones employed.
 enum PatrolState {
 	patrol,
 	chasing,
-	searching
+	teleporting
 }
 //Reference to the wall tile map for collision.
 walltilemap = layer_tilemap_get_id("RoomTiles");

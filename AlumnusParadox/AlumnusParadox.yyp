@@ -59,6 +59,7 @@
     {"id":{"name":"rmd_test","path":"rooms/rmd_test/rmd_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"InventoryItem","path":"scripts/InventoryItem/InventoryItem.yy",},},
+    {"id":{"name":"player_rift_pull","path":"shaders/player_rift_pull/player_rift_pull.yy",},},
     {"id":{"name":"placeholderwalltiles_sprite","path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},},
     {"id":{"name":"player1","path":"sprites/player1/player1.yy",},},
     {"id":{"name":"spr_change","path":"sprites/spr_change/spr_change.yy",},},

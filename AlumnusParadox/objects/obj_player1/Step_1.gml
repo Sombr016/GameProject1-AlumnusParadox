@@ -88,6 +88,13 @@ if(!tilemap_get_at_pixel(walltilemap, x, y + (inputVect_y*sprite_height/2)+(inpu
 else{
 vCancel = 0
 }
+//Death State. Cancels all movement and unselects the grabTarget.
+if(state == States.death) {
+	hCancel = 0;
+	vCancel = 0;
+	grabTarget = noone;
+	deathtimer--;
+}
 
 hspeed = inputVect_x * speedSpeed * hCancel
 vspeed = inputVect_y * speedSpeed * vCancel

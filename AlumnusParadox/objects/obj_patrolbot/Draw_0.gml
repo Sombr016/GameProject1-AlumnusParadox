@@ -1,8 +1,12 @@
-draw_self();
+if(sprite_index != spr_patrol_away) {
+	draw_self();
+}
+draw_set_alpha(1);
 //Visual representation of the viewing triangle.
 draw_set_color(c_yellow);
-draw_set_alpha(0.2);
+draw_set_alpha(0.2*image_alpha);
 //Got this code from reddit.
+//Source: https://www.reddit.com/r/gamemaker/comments/d6aa79/how_to_make_a_vision_cone_for_the_enemy/?solution=e55c9fb9834a878ce55c9fb9834a878c&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c3310504e796643cfc02afa089dc7c8f035e&jsc_orig_r=&solution=a1a359513035ceefa1a359513035ceef&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c331c9fec6024c6b6aa6cc84dfa653e12e3c&jsc_orig_r=
 draw_triangle(x, y,
 x + lengthdir_x(vision_distance, direction+vision_spread),
 y + lengthdir_y(vision_distance, direction+vision_spread),
@@ -29,6 +33,7 @@ if(debug) {
 	var xdrawscale = 0.75;
 	var ydrawscale = 0.75;
 	//Text for collisions.
+	draw_text_ext_transformed(x,y-70,("Direction: "+string(direction)),-1,-1,xdrawscale,ydrawscale,0);
 	draw_text_ext_transformed(x,y-60,("Colliding with wall? "+string(place_meeting((x + (walk_speed*sprite_width/2*cos(direction*(pi/180)))),(y + (walk_speed*sprite_width/2*sin(direction*(pi/180)))),walltilemap))
 	+". Colliding with block? "+string(collision_line(x,y,_x, _y,obj_movingBlocks, false, true))),-1,-1,xdrawscale,ydrawscale,0);
 	//Text for each alarm.
@@ -41,5 +46,8 @@ if(debug) {
 else {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
+}
+if(sprite_index == spr_patrol_away) {
+	draw_self();
 }
 //draw_text(x,y-20,string(line_array));

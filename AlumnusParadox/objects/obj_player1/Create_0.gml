@@ -5,7 +5,8 @@ walltilemap = layer_tilemap_get_id("RoomTiles");
 //Player States
 enum States {
 	regular, 
-	pushing
+	pushing,
+	death
 }
 
 //Axis that obj_movingBlocks is being grabbed
@@ -19,9 +20,18 @@ enum GrabAxis {
 //Initial player state
 state = States.regular;
 
+isDead = 0;
 
 // 'grabTarget' and 'grabDirection' are used for grabbing/pushing
 grabTarget = noone
 grabDirection = GrabAxis.none
 // 'grabTarget' refers to what instance is being grabbed
 // 'grabDirection' refers to what axis (x or y) you're moving on
+
+
+_uniColor = shader_get_uniform(player_rift_pull, "u_colour");
+_color    = [1.0, 1.0, 0.0, 0.5];
+// X (RED) Y (GREEN) Z (BLUE) W (OPACITY)
+
+code1 = [vk_up, vk_right,vk_down,vk_down,vk_down];
+code1_pos = 0;

@@ -9,9 +9,7 @@ far away from the Bot (or the Bot moves too far away from the patrolling area), 
 enter the Searching State. If the Bot comes into contact with the player, then it will kill the player.
 
 This searching state
-Searching State -> The patrol bot will move towards the last known player location. Once there, the bot will stop moving and look around in an attempt to find the player. If the patrol bot finds the
-player again, then it will enter the Chasing State once again. If the patrol bot does NOT find the
-player, it will return to its patrolling state.
+Teleporting State -> Teleports to the last known point on the path. Doesn't do anything.
 
 
 Paused State -> If the game is paused, then the Bot will stay in place, remembering which state it was in before the game is paused. Once the pause ends, the Bot will return to its previous state.
@@ -44,11 +42,14 @@ for(var i = 0; i < triangle_segments; i++) {
 	}
 	
 }
-image_angle = direction;
+//image_angle = direction;
 
 
 if(state == PatrolState.patrol) {
 	//If the target is found and the alarm isn't already active, activate the bot.
+	if(image_alpha <= 1) {
+		image_alpha += 0.05
+	}
 	if(target != noone && alarm[0] < 0) {
 		alarm[0] = activation_time;
 	}
@@ -86,5 +87,16 @@ if(state == PatrolState.chasing) {
 		}
 		//Set the speed. Base Walk Speed * Chase Speed Multiplier * vCancel.
 		speed = walk_speed*chase_speed_mult*vCancel;
+	}
+}
+if(state == PatrolState.teleporting) {
+	if(image_alpha <= 0) {
+		state = PatrolState.patrol;
+		path_start(path_ref,walk_speed,path_action_restart,true)
+		path_position = lastpathposition;
+
+	}
+	else {
+		image_alpha -= (1/fading_time);
 	}
 }

@@ -32,7 +32,6 @@ if (state == TurretStates.sentry) {
 			reverse = reverse * -1;
 		}
 	}
-	sprite_index = spr_turret_passive;
 }
 /* ENGAGED STATE
 While in the engaged state, the turret will lock on to the player and start firing bullets.
@@ -62,7 +61,6 @@ if (state == TurretStates.engaged) {
 			alarm[1] = 30;
 		}
 		//Sets the sprite index to the active state.
-		sprite_index = spr_turret_active;
 	}
 }
 /* SEARCH STATE
