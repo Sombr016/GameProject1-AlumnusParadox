@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_rift","path":"objects/obj_rift/obj_rift.yy",},"propertyId":{"name":"closeAnimation","path":"objects/obj_rift/obj_rift.yy",},"resource":{"name":"spr_red_rift_close","path":"sprites/spr_red_rift_close/spr_red_rift_close.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_red_rift_close",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Rifts",
+    "path":"folders/Objects/Rifts.yy",
   },
   "parentObjectId":{
     "name":"obj_rift",

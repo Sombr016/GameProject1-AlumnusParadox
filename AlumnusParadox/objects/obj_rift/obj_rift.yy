@@ -9,8 +9,8 @@
   "name":"obj_rift",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Rifts",
+    "path":"folders/Objects/Rifts.yy",
   },
   "parentObjectId":null,
   "persistent":false,
