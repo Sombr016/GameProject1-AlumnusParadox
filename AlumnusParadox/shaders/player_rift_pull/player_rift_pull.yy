@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"player_rift_pull",
+  "name":"player_rift_pull",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

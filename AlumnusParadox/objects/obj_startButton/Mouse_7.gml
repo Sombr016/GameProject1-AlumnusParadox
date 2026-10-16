@@ -1,0 +1,1 @@
+room_goto(rmd_main)

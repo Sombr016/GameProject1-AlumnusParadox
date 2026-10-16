@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"roadTileMap",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"roof_autotile","closed_edge":false,"name":"roof_autotile","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,6,0,0,0,4,0,0,0,7,15,13,16,0,],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":6,
+    "SerialiseWidth":7,
+    "TileCompressedData":[
+      -8,0,29,536870949,0,4,5,6,7,0,27,0,13,14,15,16,0,10,0,22,23,24,25,0,27,0,31,32,33,34,0,37,-5,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"roadTileMap",
+  "out_columns":9,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_road_tiles",
+    "path":"sprites/spr_road_tiles/spr_road_tiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":48,
+  "tilehsep":12,
+  "tilevsep":12,
+  "tileWidth":48,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":81,
+}
