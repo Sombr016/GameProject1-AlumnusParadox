@@ -25,7 +25,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"closeAnimation","filters":[],"listItems":[],"multiselect":false,"name":"closeAnimation","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_rift_close","path":"sprites/spr_rift_close/spr_rift_close.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_rift_close","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,

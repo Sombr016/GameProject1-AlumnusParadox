@@ -1,3 +1,3 @@
-if(sprite_index == spr_rift_close){
+if(sprite_index == closeAnimation){
 	instance_destroy()
 }

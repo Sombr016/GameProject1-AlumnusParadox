@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_movingBlock",
-    "path":"sprites/spr_movingBlock/spr_movingBlock.yy",
+    "name":"spr_movingRock",
+    "path":"sprites/spr_movingRock/spr_movingRock.yy",
   },
   "spriteMaskId":null,
   "visible":true,
