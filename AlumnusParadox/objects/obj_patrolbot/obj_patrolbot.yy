@@ -48,7 +48,7 @@
     {"$GMObjectProperty":"v2","%Name":"fading_time","filters":[],"listItems":[],"multiselect":false,"name":"fading_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"act_sound_ref","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"act_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_killjoy","path":"sounds/snd_killjoy/snd_killjoy.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_killjoy","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"act_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_tada","path":"sounds/snd_tada/snd_tada.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_tada","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

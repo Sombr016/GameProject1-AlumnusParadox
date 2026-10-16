@@ -1,6 +1,8 @@
 //Initialize a timer to countdown from 3 minutes
 total_seconds = timeloopduration;
 
+blackScreenOpacity = 0;
+
 rift_completion = [false,false,false];
 
 isPlayerDead = false;

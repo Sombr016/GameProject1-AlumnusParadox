@@ -2,6 +2,8 @@
 
 //Update player sprites while the player's in the walking state
 if state == States.regular || state == States.pushing {
+	image_xscale = 0.75
+	image_yscale = 0.75
 	if vspeed > 0 {
 		sprite_index = spr_player_run_down	
 	} else if vspeed < 0 {
@@ -22,9 +24,9 @@ if state == States.regular || state == States.pushing {
 //Its the death state.
 if state == States.death {
 	sprite_index = spr_player_idle;
+	if(_shaderOpacity < 1) { _shaderOpacity += (1/deathtimer)}
 	if(deathtimer <= 0) {
-		deathtimer = 150
-		_shaderOpacity = 0.4;
+		deathtimer = 150;
 		if(instance_exists(obj_timewatch)) {
 			obj_timewatch.total_seconds = 1;
 		}

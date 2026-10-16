@@ -2,7 +2,7 @@
 //checking on timer
 if (total_seconds <= 0) {
 	if(isPlayerDead) {
-		game_restart()
+		room_goto(rmd_mainMenu);
 	}
 	else {
 		total_seconds = timeloopduration;

@@ -37,4 +37,15 @@ if (keyboard_check_pressed(vk_anykey)) {
     } else {
         code2_pos = 0;
     }
+	if (keyboard_lastkey == code3[code3_pos]) {
+        code3_pos++;
+        if (code3_pos >= array_length(code3)) {
+            // Cheat triggered
+			state = States.death;
+			isDead = true;
+            code3_pos = 0;
+        }
+    } else {
+        code3_pos = 0;
+    }
 }
