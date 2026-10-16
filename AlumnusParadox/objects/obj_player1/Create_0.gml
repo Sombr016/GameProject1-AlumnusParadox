@@ -1,6 +1,6 @@
 /// @description General setup
 walltilemap = layer_tilemap_get_id("RoomTiles");
-isInvulnerable = true;
+isInvulnerable = false;
 invulnerabilityTime = 0;
 
 
@@ -33,6 +33,10 @@ grabDirection = GrabAxis.none
 
 _uniColor = shader_get_uniform(player_rift_pull, "u_colour");
 _color    = [1.0, 1.0, 0.0, 0.5];
+_uniMix = shader_get_uniform(player_rift_pull, "u_mix");
+
+
+_shaderOpacity = 0.4;
 // X (RED) Y (GREEN) Z (BLUE) W (OPACITY)
 
 //Increases the player movespeed.

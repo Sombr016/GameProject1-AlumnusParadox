@@ -1,2 +1,4 @@
 /// @description - BULLET EVENT
-canFire = true;
+if(target != noone && !target.isDead) {
+	canFire = true;
+}

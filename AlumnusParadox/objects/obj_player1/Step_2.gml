@@ -24,6 +24,7 @@ if state == States.death {
 	sprite_index = spr_player_idle;
 	if(deathtimer <= 0) {
 		deathtimer = 150
+		_shaderOpacity = 0.4;
 		if(instance_exists(obj_timewatch)) {
 			obj_timewatch.total_seconds = 1;
 		}
