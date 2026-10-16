@@ -12,8 +12,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_quitButton_hover","path":"sprites/spr_quitButton_hover/spr_quitButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_quitButton_hover",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":{
     "name":"obj_startButton",
