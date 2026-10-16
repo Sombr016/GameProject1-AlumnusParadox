@@ -19,6 +19,21 @@ if state == States.regular {
 			other.grabTarget = id
 		}
 	}
+	
+	//Checks to see if the keyboard letter P is push to pick up rifts
+	if (keyboard_check_pressed((ord("P"))))  {
+	with obj_rift1 {
+		instance_destroy()
+	}
+	
+	with obj_rift2 {
+		instance_destroy()
+	}
+	
+	with obj_rift3 {
+		instance_destroy()
+	}
+}
 }
 		
 #endregion
