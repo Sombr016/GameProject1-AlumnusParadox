@@ -3,15 +3,22 @@
   "%Name":"obj_quitButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":70,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_quitButton",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_quitButton","path":"sprites/spr_quitButton/spr_quitButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_quitButton",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_quitButton_hover","path":"sprites/spr_quitButton_hover/spr_quitButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_quitButton_hover",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_startButton",
+    "path":"objects/obj_startButton/obj_startButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

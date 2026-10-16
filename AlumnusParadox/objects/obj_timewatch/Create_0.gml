@@ -3,6 +3,9 @@ total_seconds = timeloopduration;
 
 blackScreenOpacity = 0;
 
+global.riftGoal = totalRifts
+global.riftsCompleted = 0
+
 rift_completion = [false,false,false];
 
 isPlayerDead = false;

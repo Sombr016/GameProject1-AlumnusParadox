@@ -34,6 +34,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"timeloopduration","filters":[],"listItems":[],"multiselect":false,"name":"timeloopduration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"screenfadetime","filters":[],"listItems":[],"multiselect":false,"name":"screenfadetime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"totalRifts","filters":[],"listItems":[],"multiselect":false,"name":"totalRifts","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

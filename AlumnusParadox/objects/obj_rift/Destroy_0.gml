@@ -1,0 +1,1 @@
+global.riftsCompleted += 1

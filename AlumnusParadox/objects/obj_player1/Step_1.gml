@@ -20,9 +20,21 @@ if state == States.regular {
 		}
 	}
 	
+	with obj_rift{
+		//This code is being executed within an instance of obj_movingBlocks (every instance, for that matter)
+		//since bestDistance is declared as a local variable (it's yellow), we still have access to it in this code.
+		var thisDistance = point_distance(x,y,other.x,other.y);
+			
+		if thisDistance < bestDistance {
+			bestDistance = thisDistance
+			//In this context, 'other' is obj_player
+			other.grabTarget = id
+		}
+	}
+	
 	//Checks to see if the keyboard letter P is push to pick up rifts
 	if (keyboard_check_pressed((ord("P"))))  {
-	with obj_rift1 {
+	with obj_rift {
 		sprite_index = spr_rift_close
 	}
 	
@@ -59,14 +71,19 @@ if keyboard_check_pressed(ord("E"))
 	//If scanning (see above) found a grab target, start pushing it.
 	else if instance_exists(grabTarget){
 		
-		state = States.pushing
+		if(grabTarget.object_index == obj_movingBlocks){
+			state = States.pushing
 		
-		//Calculate grabDirection based on which axis you're closest to the grabTarget on
-		if abs(x-grabTarget.x)<abs(y-grabTarget.y){
-			grabDirection = GrabAxis.vertical	
-		} else {
-			grabDirection = GrabAxis.horizontal	
+			//Calculate grabDirection based on which axis you're closest to the grabTarget on
+			if abs(x-grabTarget.x)<abs(y-grabTarget.y){
+				grabDirection = GrabAxis.vertical	
+			} else {
+				grabDirection = GrabAxis.horizontal	
+			}
+		} else if(grabTarget.object_index == obj_rift or object_is_ancestor(grabTarget.object_index,obj_rift)){
+			grabTarget.sprite_index = grabTarget.closeAnimation
 		}
+		
 	}
 	#endregion
 }
