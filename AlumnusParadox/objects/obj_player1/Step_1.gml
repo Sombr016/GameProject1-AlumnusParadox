@@ -20,6 +20,7 @@ if state == States.regular {
 		}
 	}
 	
+	//Player targeting for rifts
 	with obj_rift{
 		//This code is being executed within an instance of obj_movingBlocks (every instance, for that matter)
 		//since bestDistance is declared as a local variable (it's yellow), we still have access to it in this code.
@@ -31,21 +32,6 @@ if state == States.regular {
 			other.grabTarget = id
 		}
 	}
-	
-	//Checks to see if the keyboard letter P is push to pick up rifts
-	if (keyboard_check_pressed((ord("P"))))  {
-	with obj_rift {
-		sprite_index = spr_rift_close
-	}
-	
-	with obj_rift2 {
-		instance_destroy()
-	}
-	
-	with obj_rift3 {
-		instance_destroy()
-	}
-}
 }
 		
 #endregion
@@ -71,6 +57,7 @@ if keyboard_check_pressed(ord("E"))
 	//If scanning (see above) found a grab target, start pushing it.
 	else if instance_exists(grabTarget){
 		
+		//if the grabTarget is a block, start pushing
 		if(grabTarget.object_index == obj_movingBlocks){
 			state = States.pushing
 		
@@ -80,6 +67,7 @@ if keyboard_check_pressed(ord("E"))
 			} else {
 				grabDirection = GrabAxis.horizontal	
 			}
+		// if grabTarget is a rift, close the rift
 		} else if(grabTarget.object_index == obj_rift or object_is_ancestor(grabTarget.object_index,obj_rift)){
 			grabTarget.sprite_index = grabTarget.closeAnimation
 		}
