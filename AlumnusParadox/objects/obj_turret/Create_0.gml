@@ -24,5 +24,3 @@ if(min_rotation < 0) {
 if(max_rotation >= 360) {
 	max_rotation = (max_rotation-360)
 }
-
-reverse = 1;

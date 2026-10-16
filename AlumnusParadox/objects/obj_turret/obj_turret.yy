@@ -45,6 +45,7 @@
     {"$GMObjectProperty":"v2","%Name":"activation_sound_ref","filters":[
         "GMSound",
       ],"listItems":[],"multiselect":false,"name":"activation_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_tada","path":"sounds/snd_tada/snd_tada.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_tada","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"reverse","filters":[],"listItems":[],"multiselect":false,"name":"reverse","rangeEnabled":true,"rangeMax":1.0,"rangeMin":-1.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
