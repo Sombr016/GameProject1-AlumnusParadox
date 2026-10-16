@@ -23,7 +23,7 @@ if state == States.regular {
 	//Checks to see if the keyboard letter P is push to pick up rifts
 	if (keyboard_check_pressed((ord("P"))))  {
 	with obj_rift1 {
-		instance_destroy()
+		sprite_index = spr_rift_close
 	}
 	
 	with obj_rift2 {
