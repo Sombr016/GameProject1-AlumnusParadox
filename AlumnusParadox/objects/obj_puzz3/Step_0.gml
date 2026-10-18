@@ -1,4 +1,8 @@
 if (guiShown) {
+	if(solved && instance_exists(obj_door)){
+			instance_destroy(obj_door)
+	}
+	
 	if (typing)
 	{
 		userGuess = keyboard_string;

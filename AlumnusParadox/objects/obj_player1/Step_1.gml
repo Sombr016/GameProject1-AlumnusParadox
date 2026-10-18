@@ -33,16 +33,16 @@ if state == States.regular {
 		}
 	}
 	
-	if (keyboard_check_pressed(ord("E")))
-	{
-		if (place_meeting(x, y, obj_cpu))
-		{
-			var puzzle = instance_find(obj_puzz3, 0);
-			if (puzzle != noone)
-			{
-				puzzle.guiShown = true;
-				puzzle.typing = true;
-			}
+	//Player targeting the computer
+	with obj_cpu{
+		//This code is being executed within an instance of obj_movingBlocks (every instance, for that matter)
+		//since bestDistance is declared as a local variable (it's yellow), we still have access to it in this code.
+		var thisDistance = point_distance(x,y,other.x,other.y);
+			
+		if thisDistance < bestDistance {
+			bestDistance = thisDistance
+			//In this context, 'other' is obj_player
+			other.grabTarget = id
 		}
 	}
 }
@@ -83,6 +83,17 @@ if keyboard_check_pressed(ord("E"))
 		// if grabTarget is a rift, close the rift
 		} else if(grabTarget.object_index == obj_rift or object_is_ancestor(grabTarget.object_index,obj_rift)){
 			grabTarget.sprite_index = grabTarget.closeAnimation
+			
+		} else if(grabTarget.object_index == obj_cpu){
+		
+			if (keyboard_check_pressed(ord("E"))) {
+				keyboard_string = ""
+					var puzzle = instance_find(obj_puzz3, 0);
+					if (puzzle != noone){
+						puzzle.guiShown = true;
+						puzzle.typing = true;
+					}
+			}
 		}
 		
 	}
@@ -108,14 +119,16 @@ if state == States.pushing {
 }
 
 //Horizontal wall collision for player
-if(!tilemap_get_at_pixel(walltilemap, x + (inputVect_x*sprite_width/2) + (inputVect_x * speedSpeed), y)){
+collidH = tilemap_get_at_pixel(walltilemap, x + (inputVect_x*sprite_width/2) + (inputVect_x * speedSpeed), y)
+if(!collidH){
  hCancel = 1
 }
 else{
 hCancel = 0
 }
 //Vertical  wall collision for player
-if(!tilemap_get_at_pixel(walltilemap, x, y + (inputVect_y*sprite_height/2)+(inputVect_y * speedSpeed))){
+collidV = tilemap_get_at_pixel(walltilemap, x, y +(inputVect_y*sprite_height/2)+(inputVect_y * speedSpeed))
+if(!collidV){
  vCancel = 1
 }
 else{

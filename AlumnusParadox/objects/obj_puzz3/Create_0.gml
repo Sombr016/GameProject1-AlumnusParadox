@@ -6,9 +6,10 @@ userGuess = ""
 feedbackMsg = ""
 typing = false
 guiShown = false
+solved = false
 
 // GUI layout
-inputX = 100;
-inputY = 180;
-inputW = 350;
+inputX = 860;
+inputY = 440;
+inputW = 250;
 inputH = 40;

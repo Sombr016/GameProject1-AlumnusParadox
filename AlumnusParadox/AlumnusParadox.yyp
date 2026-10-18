@@ -48,6 +48,7 @@
   "name":"AlumnusParadox",
   "resources":[
     {"id":{"name":"obj_cpu","path":"objects/obj_cpu/obj_cpu.yy",},},
+    {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_itemparent","path":"objects/obj_itemparent/obj_itemparent.yy",},},
     {"id":{"name":"obj_mainmenu","path":"objects/obj_mainmenu/obj_mainmenu.yy",},},

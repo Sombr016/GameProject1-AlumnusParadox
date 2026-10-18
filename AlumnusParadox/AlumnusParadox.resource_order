@@ -29,6 +29,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_cpu","order":16,"path":"objects/obj_cpu/obj_cpu.yy",},
+    {"name":"obj_door","order":17,"path":"objects/obj_door/obj_door.yy",},
     {"name":"obj_itemparent","order":1,"path":"objects/obj_itemparent/obj_itemparent.yy",},
     {"name":"obj_mainmenu","order":14,"path":"objects/obj_mainmenu/obj_mainmenu.yy",},
     {"name":"obj_movingBlocks","order":9,"path":"objects/obj_movingBlocks/obj_movingBlocks.yy",},
