@@ -1,0 +1,38 @@
+if (guiShown) {
+	if (typing)
+	{
+		userGuess = keyboard_string;
+		// Remove the last character with Backspace
+		if (keyboard_check_pressed(vk_backspace))
+		{
+			if (userGuess != "")
+		    {
+		        userGuess = string_delete(
+		            userGuess,
+		            string_length(userGuess),
+		            1
+					);
+		     }
+		}
+	
+		// Submit using Enter
+		if (keyboard_check_pressed(vk_enter))
+		{
+			userGuess = keyboard_string;
+			if (string_trim(userGuess) == answer)
+			{
+				feedbackMsg = "Correct! You solved the puzzle. Press ESC to exit";
+		    }
+		    else
+		    {
+				feedbackMsg = "Incorrect. Try again!";
+		    }
+		}
+		// Close the GUI by pressing Escape
+		if (keyboard_check_pressed(vk_escape))
+		{
+			guiShown = false;
+		    exit;
+		}
+	}
+}

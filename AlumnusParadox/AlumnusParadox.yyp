@@ -47,6 +47,7 @@
   },
   "name":"AlumnusParadox",
   "resources":[
+    {"id":{"name":"obj_cpu","path":"objects/obj_cpu/obj_cpu.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_itemparent","path":"objects/obj_itemparent/obj_itemparent.yy",},},
     {"id":{"name":"obj_mainmenu","path":"objects/obj_mainmenu/obj_mainmenu.yy",},},
@@ -54,6 +55,7 @@
     {"id":{"name":"obj_otherID","path":"objects/obj_otherID/obj_otherID.yy",},},
     {"id":{"name":"obj_patrolbot","path":"objects/obj_patrolbot/obj_patrolbot.yy",},},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},},
+    {"id":{"name":"obj_puzz3","path":"objects/obj_puzz3/obj_puzz3.yy",},},
     {"id":{"name":"obj_quitButton","path":"objects/obj_quitButton/obj_quitButton.yy",},},
     {"id":{"name":"obj_rift_grn","path":"objects/obj_rift_grn/obj_rift_grn.yy",},},
     {"id":{"name":"obj_rift_red","path":"objects/obj_rift_red/obj_rift_red.yy",},},
@@ -77,6 +79,7 @@
     {"id":{"name":"placeholderwalltiles_sprite","path":"sprites/placeholderwalltiles_sprite/placeholderwalltiles_sprite.yy",},},
     {"id":{"name":"player1","path":"sprites/player1/player1.yy",},},
     {"id":{"name":"spr_change","path":"sprites/spr_change/spr_change.yy",},},
+    {"id":{"name":"spr_cpuPlaceHolder","path":"sprites/spr_cpuPlaceHolder/spr_cpuPlaceHolder.yy",},},
     {"id":{"name":"spr_E","path":"sprites/spr_E/spr_E.yy",},},
     {"id":{"name":"spr_grn_rift_close","path":"sprites/spr_grn_rift_close/spr_grn_rift_close.yy",},},
     {"id":{"name":"spr_grn_rift_idle","path":"sprites/spr_grn_rift_idle/spr_grn_rift_idle.yy",},},

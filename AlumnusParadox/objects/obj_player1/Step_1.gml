@@ -32,6 +32,19 @@ if state == States.regular {
 			other.grabTarget = id
 		}
 	}
+	
+	if (keyboard_check_pressed(ord("E")))
+	{
+		if (place_meeting(x, y, obj_cpu))
+		{
+			var puzzle = instance_find(obj_puzz3, 0);
+			if (puzzle != noone)
+			{
+				puzzle.guiShown = true;
+				puzzle.typing = true;
+			}
+		}
+	}
 }
 		
 #endregion
