@@ -79,7 +79,7 @@ if(state == PatrolState.chasing) {
 		//Point towards the player.
 		direction = point_direction(x,y,obj_player1.x,obj_player1.y);
 		//If the patrol bot collides with a wall or a moving block, then stop moving.
-		if(place_meeting((x + (walk_speed*sprite_width/2*cos(direction*(pi/180)))),(y + (walk_speed*sprite_height/2*sin(direction*(pi/180)))),[walltilemap,obj_movingBlocks])) {
+		if(place_meeting(x + lengthdir_x(sprite_width/2,direction),y+lengthdir_y(sprite_height/2,direction),[walltilemap,obj_movingBlocks])) {
 			vCancel = 0;
 		}
 		else {

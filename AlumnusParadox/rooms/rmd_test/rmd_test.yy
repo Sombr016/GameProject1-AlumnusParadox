@@ -19,8 +19,9 @@
     {"$GMRTileLayer":"","%Name":"RoomTiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"RoomTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":16,"SerialiseWidth":28,"TileCompressedData":[
           -9,-2147483648,4,4,5,5,7,-24,-2147483648,4,13,15,15,16,-24,-2147483648,4,22,17,8,25,-24,-2147483648,
           4,22,26,35,25,-24,-2147483648,4,31,32,33,34,-14,-2147483648,1,0,-22,-2147483648,2,0,-2147483648,-4,0,
-          -25,-2147483648,-3,0,-25,-2147483648,-3,0,-7,-2147483648,-2,0,-15,-2147483648,-4,0,-7,-2147483648,-2,
-          0,-16,-2147483648,-3,0,-26,-2147483648,-2,0,-26,-2147483648,1,0,-113,-2147483648,
+          -21,-2147483648,-4,14,-3,0,-21,-2147483648,4,31,23,23,31,-3,0,-7,-2147483648,-2,0,-12,-2147483648,4,
+          31,23,23,31,-3,0,-7,-2147483648,-2,0,-12,-2147483648,4,31,32,33,31,-3,0,-26,-2147483648,-2,0,-26,-2147483648,
+          1,0,-113,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"roadTileMap","path":"tilesets/roadTileMap/roadTileMap.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_456C3BD2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_456C3BD2","objectId":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":288.0,},

@@ -9,7 +9,7 @@ if(state = States.death) {
 	shader_reset();
 }
 //If the time remaining is less than 5 seconds, make the player slowly fade into blue.
-else if(object_exists(obj_timewatch)) {
+else if(instance_exists(obj_timewatch)) {
 	if(obj_timewatch.total_seconds <= 5) {
 		shader_set(player_rift_pull);
 		_color = [0,0,1,1];
