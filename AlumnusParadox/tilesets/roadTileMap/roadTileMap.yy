@@ -2,13 +2,15 @@
   "$GMTileSet":"v1",
   "%Name":"roadTileMap",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"roof_autotile","closed_edge":false,"name":"roof_autotile","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,6,0,0,0,4,0,0,0,7,15,13,16,0,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":true,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[23,0,0,14,7,22,0,13,4,0,25,16,44,31,34,0,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":6,
-    "SerialiseWidth":7,
+    "SerialiseWidth":12,
     "TileCompressedData":[
-      -8,0,29,536870949,0,4,5,6,7,0,27,0,13,14,15,16,0,10,0,22,23,24,25,0,27,0,31,32,33,34,0,37,-5,0,
+      -13,0,6,536870949,0,4,5,6,7,-6,0,6,27,0,13,14,15,16,-6,0,6,10,0,22,23,24,25,-6,0,6,27,0,31,32,33,34,
+      -6,0,1,37,-10,0,
     ],
     "TileDataFormat":1,
   },
