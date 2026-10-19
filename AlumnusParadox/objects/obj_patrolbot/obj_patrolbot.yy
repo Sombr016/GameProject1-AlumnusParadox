@@ -45,10 +45,14 @@
     {"$GMObjectProperty":"v2","%Name":"activation_time","filters":[],"listItems":[],"multiselect":false,"name":"activation_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"chase_speed_mult","filters":[],"listItems":[],"multiselect":false,"name":"chase_speed_mult","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.3","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"debug","filters":[],"listItems":[],"multiselect":false,"name":"debug","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"fading_time","filters":[],"listItems":[],"multiselect":false,"name":"fading_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"fading_time","filters":[],"listItems":[],"multiselect":false,"name":"fading_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"act_sound_ref","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"act_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_tada","path":"sounds/snd_tada/snd_tada.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_tada","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"act_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_activate1","path":"sounds/snd_activate1/snd_activate1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_activate1","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"teleport_sound_ref","filters":[
+        "GMSound",
+      ],"listItems":[],"multiselect":false,"name":"teleport_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_teleport1","path":"sounds/snd_teleport1/snd_teleport1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_teleport1","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"time_before_teleport","filters":[],"listItems":[],"multiselect":false,"name":"time_before_teleport","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"150","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

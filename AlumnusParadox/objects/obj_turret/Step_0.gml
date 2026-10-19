@@ -49,6 +49,7 @@ if (state == TurretStates.engaged) {
 			//Then, create a bullet instance and copy the turret's direction for the bullet.
 			canFire = false;
 			alarm[3] = fire_rate;
+			sound_instance = audio_play_sound_at(firing_sound, x, y, 0, beam_length+50, 300, 1, false, 1,0.6);
 			bullet = instance_create_layer(x+(14*cos(-direction*(pi/180))),y+(14*sin(-direction*(pi/180))),"Instances",obj_turretbullet);
 			bullet.direction = direction;
 			bullet.image_angle = direction;

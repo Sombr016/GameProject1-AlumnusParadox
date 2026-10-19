@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"shotgun_sfx",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.4860997,
+  "exportDir":"",
+  "name":"shotgun_sfx",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"shotgun_sfx.wav",
+  "volume":1.0,
+}

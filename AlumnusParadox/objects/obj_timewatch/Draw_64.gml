@@ -66,6 +66,7 @@ riftsGoal = string(global.riftsCompleted) + " / "+ string(global.riftGoal) +" Ri
 draw_text(400,150, riftsGoal)
 
 //Player death screen
+//Temporary Text, replace this code with the loss screen sprites.
 if(isPlayerDead) {
-	draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "Shiv Deadlock");
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "You Died!");
 }

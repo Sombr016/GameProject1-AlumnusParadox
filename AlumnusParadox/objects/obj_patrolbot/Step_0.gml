@@ -69,7 +69,7 @@ if(state == PatrolState.patrol) {
 if(state == PatrolState.chasing) {
 	//If the target isn't found and the alarm isn't set, then start the patrol alarm.
 	if(target == noone && alarm[1] < 0) {
-		alarm[1] = 120;
+		alarm[1] = time_before_teleport;
 	}
 	//If the target is found, then the patrol alarm is set inactive.
 	else if(target != noone){
