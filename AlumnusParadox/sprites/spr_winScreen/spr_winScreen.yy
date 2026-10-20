@@ -3,7 +3,7 @@
   "%Name":"spr_winScreen",
   "bboxMode":0,
   "bbox_bottom":1079,
-  "bbox_left":0,
+  "bbox_left":1,
   "bbox_right":1919,
   "bbox_top":0,
   "collisionKind":1,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5c42f2bd-42a1-4121-9d87-b8cbeb51773e","name":"5c42f2bd-42a1-4121-9d87-b8cbeb51773e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a3bfb592-0f90-4eab-8d0e-9edb9da8f801","name":"a3bfb592-0f90-4eab-8d0e-9edb9da8f801","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0541eb7b-8ab8-4d76-b1f5-5fd3798df961","blendMode":0,"displayName":"default","isLocked":false,"name":"0541eb7b-8ab8-4d76-b1f5-5fd3798df961","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"12e65b94-73dd-465a-8f38-07fd7a9cd118","blendMode":0,"displayName":"default","isLocked":false,"name":"12e65b94-73dd-465a-8f38-07fd7a9cd118","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_winScreen",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Placeholders",
-    "path":"folders/Sprites/Placeholders.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c42f2bd-42a1-4121-9d87-b8cbeb51773e","path":"sprites/spr_winScreen/spr_winScreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5d32e9f7-a2e3-4c01-8c1a-5ec89879bf52","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a3bfb592-0f90-4eab-8d0e-9edb9da8f801","path":"sprites/spr_winScreen/spr_winScreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d61f0fe8-48ff-4fb8-b7e1-4d1878f233f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
