@@ -35,7 +35,8 @@ if (guiShown) {
 		// Close the GUI by pressing Escape
 		
 	}
-	if (keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("V")))
+	//Close menu when player moves
+	if (keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_down))
 		{
 			guiShown = false;
 		}
