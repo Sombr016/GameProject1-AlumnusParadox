@@ -15,6 +15,9 @@ radius = 77
 watchX = 145
 watchY = 190
 
+if(drawUI){
+
+
 //Draw watch frame
 draw_set_alpha(1*(1-blackScreenOpacity))
 draw_sprite(spr_watch,image_index,150,200)
@@ -94,3 +97,4 @@ if(isPlayerDead) {
 	draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "You Died!");
 }
 */
+}

@@ -5,3 +5,9 @@ if(keyboard_check_pressed(ord("O"))) {
 if(keyboard_check_pressed(ord("T"))) {
 global.riftsCompleted += 1
 }
+if(keyboard_check_pressed(ord("U"))) {
+drawUI = !drawUI
+}
+if(keyboard_check_pressed(ord("C"))){
+	obj_player1.visible = !obj_player1.visible;
+}

@@ -1,3 +1,4 @@
+drawUI = true
 //Initialize a timer to countdown from 3 minutes
 total_seconds = timeloopduration;
 blackScreenOpacity = 0;
@@ -16,3 +17,4 @@ game_end_button = noone;
 
 
 audio_falloff_set_model(audio_falloff_linear_distance);
+audio_play_sound(snd_gameBackground, 1, true)
