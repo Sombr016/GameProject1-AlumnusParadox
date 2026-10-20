@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cpuPlaceHolder",
-    "path":"sprites/spr_cpuPlaceHolder/spr_cpuPlaceHolder.yy",
+    "name":"spr_computer",
+    "path":"sprites/spr_computer/spr_computer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

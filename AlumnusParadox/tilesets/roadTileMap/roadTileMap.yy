@@ -25,8 +25,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_road_tiles",
-    "path":"sprites/spr_road_tiles/spr_road_tiles.yy",
+    "name":"spr_road_tiles2",
+    "path":"sprites/spr_road_tiles2/spr_road_tiles2.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

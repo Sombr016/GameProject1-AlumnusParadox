@@ -5,7 +5,7 @@ if (guiShown) {
 
 	//Draw input background
 	recx1 = inputX-460
-	recy1 = inputY-240
+	recy1 = inputY-140
 	recx2 = recx1+1150
 	recy2 = recy1+700
 	offset = 30
@@ -24,9 +24,9 @@ if (guiShown) {
 	    false
 	);
 	
-	// Draw question
+	// Draw prompt
 	draw_set_color(c_ltgray);
-	draw_text(inputX+150, inputY - 25, question2Player);
+	draw_text(inputX+150, inputY - 40, question2Player);
 
 	// Draw input box
 	draw_set_color(c_ltgray);
@@ -44,6 +44,15 @@ if (guiShown) {
 	draw_set_color(c_aqua);
 	draw_text(inputX+120, inputY+45, feedbackMsg);
 
+	//Draw questions to player
+	questionOffest = 150
+	questionSpace = 70
+	draw_set_color(c_lime);
+	draw_text(inputX+120, inputY+questionOffest, question1);
+	draw_text(inputX+120, inputY+questionOffest+questionSpace, question2);
+	draw_text(inputX+120, inputY+questionOffest+questionSpace*2, question3);
+	draw_sprite(spr_neon, false, inputX-400, inputY+310)
+	
 
 	var mx = device_mouse_x_to_gui(0);
 	var my = device_mouse_y_to_gui(0);
@@ -65,7 +74,7 @@ if (guiShown) {
 	if (keyboard_check_pressed(vk_enter)) {
 		userGuess += keyboard_string
 		if (string_trim(userGuess) == answer) {
-			feedbackMsg = "Accepted! Door is open"
+			feedbackMsg = "Accepted! Lowering barrier"
 			userGuess = ""
 			solved = true
 		}

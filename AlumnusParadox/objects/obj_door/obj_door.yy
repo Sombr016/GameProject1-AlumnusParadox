@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_movingBlock",
-    "path":"sprites/spr_movingBlock/spr_movingBlock.yy",
+    "name":"spr_barrier",
+    "path":"sprites/spr_barrier/spr_barrier.yy",
   },
   "spriteMaskId":null,
   "visible":true,
