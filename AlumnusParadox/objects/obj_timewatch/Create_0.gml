@@ -1,7 +1,7 @@
 //Initialize a timer to countdown from 3 minutes
 total_seconds = timeloopduration;
-
 blackScreenOpacity = 0;
+gameOverOpacity = 0;
 
 global.riftGoal = totalRifts
 global.riftsCompleted = 0
