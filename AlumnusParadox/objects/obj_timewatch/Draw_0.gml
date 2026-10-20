@@ -1,6 +1,6 @@
 // If the player dies, fade the screen to black.
 if(isPlayerDead) {
-	show_debug_message(string(gameOverOpacity));
+	//show_debug_message(string(gameOverOpacity));
 	draw_set_alpha(blackScreenOpacity);
     draw_rectangle_color(-1,-1,room_width+1,room_height+1,c_black,c_black,c_black,c_black,false);
     draw_set_alpha(1);

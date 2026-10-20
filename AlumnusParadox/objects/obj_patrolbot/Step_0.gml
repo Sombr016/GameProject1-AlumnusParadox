@@ -101,3 +101,7 @@ if(state == PatrolState.teleporting) {
 		image_alpha -= (1/fading_time);
 	}
 }
+
+audio_emitter_position(emitter, x, y, 0);
+
+audio_emitter_velocity(emitter, hspeed, vspeed, 0);

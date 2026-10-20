@@ -71,6 +71,20 @@ draw_text(400,150, riftsGoal)
 draw_set_alpha(1);
 if(blackScreenOpacity >= 1) {
 	if(gameOverOpacity < 1) {gameOverOpacity += 0.02;}
+	else { 
+		if(!instance_exists(obj_continueButton)) {
+			game_over_button = instance_create_layer(camera_get_view_x(view_camera[0])+460,camera_get_view_y(view_camera[0])+370,"DynamicGUI",obj_continueButton);
+			game_over_button.image_xscale = 0.4;
+			game_over_button.image_yscale = 0.4;
+			show_debug_message("Button X: "+string(game_over_button.x)+" Button Y: "+string(game_over_button.y));
+		}
+		if(!instance_exists(obj_endgamebutton)) {
+			game_end_button = instance_create_layer(camera_get_view_x(view_camera[0])+630,camera_get_view_y(view_camera[0])+370,"DynamicGUI",obj_endgamebutton);
+			game_end_button.image_xscale = 0.4;
+			game_end_button.image_yscale = 0.4;
+			show_debug_message("Button X: "+string(game_end_button.x)+" Button Y: "+string(game_end_button.y));
+		}
+	}
 	draw_sprite_ext(spr_GameOver_text,0,100,display_get_gui_height()/1.2, 0.5, 0.5, 0, c_red, gameOverOpacity);
 }
 //Player death screen
