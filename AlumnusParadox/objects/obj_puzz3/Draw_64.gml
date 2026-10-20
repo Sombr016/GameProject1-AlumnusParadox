@@ -60,9 +60,6 @@ if (guiShown) {
 	{
 	    typing = false;
 	}
-	if(keyboard_check_pressed(vk_up)){
-		guiShown = false
-	}
 	
 
 	if (keyboard_check_pressed(vk_enter)) {
