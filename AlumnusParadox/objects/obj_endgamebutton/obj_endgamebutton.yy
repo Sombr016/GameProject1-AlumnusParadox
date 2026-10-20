@@ -7,8 +7,8 @@
   "managed":true,
   "name":"obj_endgamebutton",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_quitButton","path":"sprites/spr_quitButton/spr_quitButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_quitButton",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_quitButton_hover","path":"sprites/spr_quitButton_hover/spr_quitButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_quitButton_hover",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_mainMenuButton","path":"sprites/spr_mainMenuButton/spr_mainMenuButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_mainMenuButton",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_mainMenuButton_hover","path":"sprites/spr_mainMenuButton_hover/spr_mainMenuButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_mainMenuButton_hover",},
   ],
   "parent":{
     "name":"Buttons",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_quitButton",
-    "path":"sprites/spr_quitButton/spr_quitButton.yy",
+    "name":"spr_mainMenuButton",
+    "path":"sprites/spr_mainMenuButton/spr_mainMenuButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

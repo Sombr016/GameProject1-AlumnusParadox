@@ -9,7 +9,10 @@
   ],
   "managed":true,
   "name":"obj_continueButton",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_restartButton","path":"sprites/spr_restartButton/spr_restartButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_restartButton",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_restartButton_hover","path":"sprites/spr_restartButton_hover/spr_restartButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_restartButton_hover",},
+  ],
   "parent":{
     "name":"Buttons",
     "path":"folders/Objects/Buttons.yy",
@@ -36,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_startButton",
-    "path":"sprites/spr_startButton/spr_startButton.yy",
+    "name":"spr_restartButton",
+    "path":"sprites/spr_restartButton/spr_restartButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
