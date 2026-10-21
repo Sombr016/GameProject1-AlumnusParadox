@@ -1,0 +1,34 @@
+if(creditsFlag) {
+	draw_set_color(c_gray);
+	draw_rectangle(
+	display_get_gui_width()/2-creditsWidth,
+	display_get_gui_height()/2-creditsHeight,
+	display_get_gui_width()/2+creditsWidth,
+	display_get_gui_height()/2+creditsHeight,
+	false);
+	draw_set_color(c_white);
+	draw_set_font(timesnewroman);
+	//font_enable_sdf(timesnewroman,true);
+	draw_text_ext_transformed(
+		display_get_gui_width()/2-(creditsWidth-5),
+		display_get_gui_height()/2-(creditsHeight),
+		creditsScript[0],
+		0,
+		-1,
+		2,
+		2,
+		0);
+	for(var i = 1; i < array_length(creditsScript); i++) {
+		draw_text_ext_transformed(
+		display_get_gui_width()/2-(creditsWidth-40),
+		display_get_gui_height()/2-(creditsHeight-10-20*i),
+		creditsScript[i],
+		0,
+		-1,
+		1,
+		1,
+		0);
+		//draw_text(display_get_gui_width()/2-(creditsWidth-40),display_get_gui_height()/2-(creditsHeight-20*i),creditsScript[i]);
+	}
+	draw_set_font(current_font);
+} 

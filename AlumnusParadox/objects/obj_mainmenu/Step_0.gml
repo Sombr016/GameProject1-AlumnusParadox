@@ -10,3 +10,24 @@ if (keyboard_check_pressed(vk_anykey)) {
         code1_pos = 0;
     }
 }
+if(keyboard_check(vk_alt) && keyboard_check_pressed(ord("C"))) {
+	creditsFlag = !creditsFlag;
+}
+
+
+if(creditsFlag) {
+	if(instance_exists(obj_startButton)) {
+		obj_startButton.image_alpha = 0;
+	}
+	if(instance_exists(obj_creditsButton)) {
+		obj_creditsButton.image_alpha = 1;
+	}
+}
+else {
+	if(instance_exists(obj_startButton)) {
+		obj_startButton.image_alpha = 1;
+	}
+	if(instance_exists(obj_quitButton)) {
+		obj_quitButton.image_alpha = 1;
+	}
+}

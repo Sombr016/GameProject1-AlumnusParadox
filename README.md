@@ -35,6 +35,25 @@ This game is dictated by a 60 second time loop that continously loops the player
 
 
 
+## Cheat Codes
+
+Up Right Down x3 -> increases player movement speed.
+
+Up x3 down x3 -> toggles player invincibility.
+
+Up x2 down x2 left right left right B A -> kills the player (used for death screen testing)
+
+(Up right down left) x2 -> teleports player to the testing area (main menu only)
+
+Alt + U -> hides UI
+
+Alt + T -> infinite time
+
+Alt + C -> hides player
+
+Alt + B -> destroys puzzle 3’s door
+
+Alt + S -> stops all audio
 
 
 

@@ -34,6 +34,7 @@
     {"name":"obj_camera","order":19,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_continueButton","order":2,"path":"objects/obj_continueButton/obj_continueButton.yy",},
     {"name":"obj_cpu","order":16,"path":"objects/obj_cpu/obj_cpu.yy",},
+    {"name":"obj_creditsButton","order":4,"path":"objects/obj_creditsButton/obj_creditsButton.yy",},
     {"name":"obj_door","order":17,"path":"objects/obj_door/obj_door.yy",},
     {"name":"obj_endgamebutton","order":3,"path":"objects/obj_endgamebutton/obj_endgamebutton.yy",},
     {"name":"obj_itemparent","order":1,"path":"objects/obj_itemparent/obj_itemparent.yy",},

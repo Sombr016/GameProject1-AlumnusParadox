@@ -41,7 +41,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"opening cutscene.mov","CopyToMask":-1,"filePath":"datafiles","name":"opening cutscene.mov","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"opening.mp4","CopyToMask":-1,"filePath":"datafiles","name":"opening.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -53,9 +55,11 @@
   },
   "name":"AlumnusParadox",
   "resources":[
+    {"id":{"name":"timesnewroman","path":"fonts/timesnewroman/timesnewroman.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_continueButton","path":"objects/obj_continueButton/obj_continueButton.yy",},},
     {"id":{"name":"obj_cpu","path":"objects/obj_cpu/obj_cpu.yy",},},
+    {"id":{"name":"obj_creditsButton","path":"objects/obj_creditsButton/obj_creditsButton.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_endgamebutton","path":"objects/obj_endgamebutton/obj_endgamebutton.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
