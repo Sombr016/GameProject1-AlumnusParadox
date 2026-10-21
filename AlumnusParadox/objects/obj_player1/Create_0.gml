@@ -4,6 +4,7 @@ isInvulnerable = false;
 invulnerabilityTime = 0;
 
 
+
 //Player States
 enum States {
 	regular, 
@@ -37,6 +38,8 @@ _uniMix = shader_get_uniform(player_rift_pull, "u_mix");
 
 
 _shaderOpacity = 0.4;
+
+_teleportOpacity = 0;
 // X (RED) Y (GREEN) Z (BLUE) W (OPACITY)
 
 //Increases the player movespeed.
@@ -49,3 +52,4 @@ code2_pos = 0;
 
 code3 = [vk_up,vk_up,vk_down,vk_down,vk_left,vk_right,vk_left,vk_right,ord("B"),ord("A")];
 code3_pos = 0;
+guiShown = false

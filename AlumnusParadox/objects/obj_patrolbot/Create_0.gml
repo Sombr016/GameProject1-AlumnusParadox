@@ -22,5 +22,6 @@ vCancel = 1;
 //A reference to the last path position before entering the chasing state.
 var lastpathposition;
 
+emitter = audio_emitter_create();
 
 path_start(path_ref,walk_speed,path_action_restart,true) 

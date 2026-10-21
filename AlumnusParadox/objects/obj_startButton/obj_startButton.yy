@@ -4,7 +4,6 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":70,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -29,8 +28,12 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"buttonSprite","filters":[],"listItems":[],"multiselect":false,"name":"buttonSprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_startButton","path":"sprites/spr_startButton/spr_startButton.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_startButton","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"buttonSprite_hover","filters":[],"listItems":[],"multiselect":false,"name":"buttonSprite_hover","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_startButton_hover","path":"sprites/spr_startButton_hover/spr_startButton_hover.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_startButton_hover","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"buttonSprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"buttonSprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_startButton","path":"sprites/spr_startButton/spr_startButton.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_startButton","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"buttonSprite_hover","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"buttonSprite_hover","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_startButton_hover","path":"sprites/spr_startButton_hover/spr_startButton_hover.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_startButton_hover","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

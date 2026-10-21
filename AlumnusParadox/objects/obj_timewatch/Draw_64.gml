@@ -15,14 +15,19 @@ radius = 77
 watchX = 145
 watchY = 190
 
+if(drawUI){
+
+
 //Draw watch frame
+draw_set_alpha(1*(1-blackScreenOpacity))
 draw_sprite(spr_watch,image_index,150,200)
+draw_set_alpha(1);
 
 //Drawing the circle over the watch frame (curtosy of google gemini)
 if (total_seconds > 0) {
     // Set color and transparency
     draw_set_color(c_blue);
-    draw_set_alpha(0.6);
+    draw_set_alpha(0.6*(1-blackScreenOpacity));
     
     // Start drawing a triangle fan primitive
     draw_primitive_begin(pr_trianglefan);
@@ -51,12 +56,13 @@ if (total_seconds > 0) {
     draw_primitive_end();
     
     // Reset alpha and color to prevent bleeding into other draw events
-    draw_set_alpha(1);
+    draw_set_alpha(1*(1-blackScreenOpacity));
     draw_set_color(c_white);
 }
 //End of google gemini code
 
 //Draw timer text
+draw_set_alpha(1*(1-blackScreenOpacity));
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_text(watchX, watchY, display_clock)
@@ -65,7 +71,30 @@ draw_text(watchX, watchY, display_clock)
 riftsGoal = string(global.riftsCompleted) + " / "+ string(global.riftGoal) +" Rifts Closed"
 draw_text(400,150, riftsGoal)
 
+draw_set_alpha(1);
+if(blackScreenOpacity >= 1) {
+	if(gameOverOpacity < 1) {gameOverOpacity += 0.02;}
+	else { 
+		if(!instance_exists(obj_continueButton)) {
+			game_over_button = instance_create_layer(camera_get_view_x(view_camera[0])+460,camera_get_view_y(view_camera[0])+370,"DynamicGUI",obj_continueButton);
+			game_over_button.image_xscale = 0.4;
+			game_over_button.image_yscale = 0.4;
+			show_debug_message("Button X: "+string(game_over_button.x)+" Button Y: "+string(game_over_button.y));
+		}
+		if(!instance_exists(obj_endgamebutton)) {
+			game_end_button = instance_create_layer(camera_get_view_x(view_camera[0])+630,camera_get_view_y(view_camera[0])+370,"DynamicGUI",obj_endgamebutton);
+			game_end_button.image_xscale = 0.4;
+			game_end_button.image_yscale = 0.4;
+			show_debug_message("Button X: "+string(game_end_button.x)+" Button Y: "+string(game_end_button.y));
+		}
+	}
+	draw_sprite_ext(spr_GameOver_text,0,100,display_get_gui_height()/1.2, 0.5, 0.5, 0, c_red, gameOverOpacity);
+}
 //Player death screen
+//Temporary Text, replace this code with the loss screen sprites.
+/*
 if(isPlayerDead) {
-	draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "Shiv Deadlock");
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "You Died!");
+}
+*/
 }

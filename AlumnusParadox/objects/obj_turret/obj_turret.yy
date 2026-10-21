@@ -35,7 +35,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"rotation_speed","filters":[],"listItems":[],"multiselect":false,"name":"rotation_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"activation_speed","filters":[],"listItems":[],"multiselect":false,"name":"activation_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"total_rotation","filters":[],"listItems":[],"multiselect":false,"name":"total_rotation","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"starting_direction","filters":[],"listItems":[],"multiselect":false,"name":"starting_direction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
@@ -44,7 +44,11 @@
     {"$GMObjectProperty":"v2","%Name":"show_line","filters":[],"listItems":[],"multiselect":false,"name":"show_line","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"activation_sound_ref","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"activation_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_tada","path":"sounds/snd_tada/snd_tada.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_tada","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"activation_sound_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_activate1","path":"sounds/snd_activate1/snd_activate1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_activate1","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"reverse","filters":[],"listItems":[],"multiselect":false,"name":"reverse","rangeEnabled":true,"rangeMax":1.0,"rangeMin":-1.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"firing_sound","filters":[
+        "GMSound",
+      ],"listItems":[],"multiselect":false,"name":"firing_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"shotgun_sfx","path":"sounds/shotgun_sfx/shotgun_sfx.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"shotgun_sfx","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

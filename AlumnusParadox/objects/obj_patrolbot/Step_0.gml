@@ -69,7 +69,7 @@ if(state == PatrolState.patrol) {
 if(state == PatrolState.chasing) {
 	//If the target isn't found and the alarm isn't set, then start the patrol alarm.
 	if(target == noone && alarm[1] < 0) {
-		alarm[1] = 120;
+		alarm[1] = time_before_teleport;
 	}
 	//If the target is found, then the patrol alarm is set inactive.
 	else if(target != noone){
@@ -79,7 +79,7 @@ if(state == PatrolState.chasing) {
 		//Point towards the player.
 		direction = point_direction(x,y,obj_player1.x,obj_player1.y);
 		//If the patrol bot collides with a wall or a moving block, then stop moving.
-		if(place_meeting((x + (walk_speed*sprite_width/2*cos(direction*(pi/180)))),(y + (walk_speed*sprite_height/2*sin(direction*(pi/180)))),[walltilemap,obj_movingBlocks])) {
+		if(place_meeting(x + lengthdir_x(sprite_width/2,direction),y+lengthdir_y(sprite_height/2,direction),[walltilemap,obj_movingBlocks])) {
 			vCancel = 0;
 		}
 		else {
@@ -101,3 +101,7 @@ if(state == PatrolState.teleporting) {
 		image_alpha -= (1/fading_time);
 	}
 }
+
+audio_emitter_position(emitter, x, y, 0);
+
+audio_emitter_velocity(emitter, hspeed, vspeed, 0);
