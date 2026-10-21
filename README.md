@@ -16,7 +16,7 @@ If the player is hit by a bullet or the patrol robot, the game is lost.
 
 This game is dictated by a 60 second time loop that continously loops the player through time (while they are still alive, of course). When the player dies or whenever they complete the objective, the loop stops.
 
-#GRADUATE REQUIREMENTS:
+GRADUATE REQUIREMENTS:
 1.) Paths were used to dictate the patrol bot's patrol path. Functionality in the object is set so that multiple paths can be used for different bots.
 2.) Spatial audio is used for the turret/patrol bot activation sounds, as well as the patrol bot's teleportation back to last known patrol spot.
 
@@ -31,7 +31,7 @@ This game is dictated by a 60 second time loop that continously loops the player
 
 
 
-#SFX:
+SFX:
 
 Turret & Patrol SFX: https://heltonyan.itch.io/retro-mecha-sfx
 Opening: https://www.youtube.com/watch?v=QmReVtyoQpglist=PLaeKSRG-Y8ed0X_uM-cEqgaTVkRkjEpVT&index=2 
