@@ -41,16 +41,24 @@ This game is dictated by a 60 second time loop that continously loops the player
 
 
 
+## Visuals
+Sprites, Images, and Backgrounds by Kourtney Gray-Ford
 
 
 ## SFX:
-
 Turret & Patrol SFX: https://heltonyan.itch.io/retro-mecha-sfx
 
-Opening: https://www.youtube.com/watch?v=QmReVtyoQpglist=PLaeKSRG-Y8ed0X_uM-cEqgaTVkRkjEpVT&index=2 
+Opening- VELDA - Melodic Mind by Epidemic Underground:https://www.youtube.com/watch?v=QmReVtyoQpg&list=PLaeKSRG-Y8ed0X_uM-cEqgaTVkRkjEpVT&index=2 
 
-Main menu: https://www.youtube.com/watch?v=7tpvUeN7WXIlist=PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG&index=2 
+Main menu- Sci Fi Cyberpunk - VHS [Synthwave/Electro] by The Neon World: https://www.youtube.com/watch?v=7tpvUeN7WXI&list=PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG&index=2 
 
-Game background: https://www.youtube.com/watch?v=hqsI5atn1U4list=PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG&index=5 
+Gameplay background- Edge of Tomorrow by TeknoAXE's Royalty Free Music: https://www.youtube.com/watch?v=hqsI5atn1U4&list=PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG&index=5
 
 Various SFX: https://ci.itch.io/400-sounds-pack
+
+
+
+## Fonts
+pixle font- VCR OSD Mono: https://www.dafont.com/vcr-osd-mono.font
+scratch font- PinkEnd: https://www.1001fonts.com/pinkend-font.html'
+
