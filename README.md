@@ -21,7 +21,16 @@ This game is dictated by a 60 second time loop that continously loops the player
 
 ## GRADUATE REQUIREMENTS:
 1.) Paths were used to dictate the patrol bot's patrol path. Functionality in the object is set so that multiple paths can be used for different bots.
+
 2.) Spatial audio is used for the turret/patrol bot activation sounds, as well as the patrol bot's teleportation back to last known patrol spot.
+
+3.) Shaders were used in both the lose screen as well as the looping effect when time fades towards the end of the loop.
+
+4.) Views are used to restrict the player view.
+
+5.) Object inheritance is used in the UI buttons as well as the rifts.
+
+6.) Both the turret and patrol bots have their own state machines that adjust the behavior of the agent given different conditions (namely when the player enters and exits the agent's view).
 
 
 
