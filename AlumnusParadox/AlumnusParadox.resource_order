@@ -67,6 +67,8 @@
     {"name":"spr_barrier","order":16,"path":"sprites/spr_barrier/spr_barrier.yy",},
     {"name":"spr_computer","order":14,"path":"sprites/spr_computer/spr_computer.yy",},
     {"name":"spr_cpuPlaceHolder","order":11,"path":"sprites/spr_cpuPlaceHolder/spr_cpuPlaceHolder.yy",},
+    {"name":"spr_creditsButton_hover","order":9,"path":"sprites/spr_creditsButton_hover/spr_creditsButton_hover.yy",},
+    {"name":"spr_creditsButton","order":8,"path":"sprites/spr_creditsButton/spr_creditsButton.yy",},
     {"name":"spr_E","order":11,"path":"sprites/spr_E/spr_E.yy",},
     {"name":"spr_GameOver_text","order":12,"path":"sprites/spr_GameOver_text/spr_GameOver_text.yy",},
     {"name":"spr_grn_rift_close","order":2,"path":"sprites/spr_grn_rift_close/spr_grn_rift_close.yy",},

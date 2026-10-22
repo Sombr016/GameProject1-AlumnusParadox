@@ -6,7 +6,10 @@
   ],
   "managed":true,
   "name":"obj_creditsButton",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_creditsButton","path":"sprites/spr_creditsButton/spr_creditsButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_creditsButton",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"propertyId":{"name":"buttonSprite_hover","path":"objects/obj_startButton/obj_startButton.yy",},"resource":{"name":"spr_creditsButton_hover","path":"sprites/spr_creditsButton_hover/spr_creditsButton_hover.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_creditsButton_hover",},
+  ],
   "parent":{
     "name":"Buttons",
     "path":"folders/Objects/Buttons.yy",
@@ -33,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mainMenuButton",
-    "path":"sprites/spr_mainMenuButton/spr_mainMenuButton.yy",
+    "name":"spr_creditsButton",
+    "path":"sprites/spr_creditsButton/spr_creditsButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -106,6 +106,8 @@
     {"id":{"name":"spr_change","path":"sprites/spr_change/spr_change.yy",},},
     {"id":{"name":"spr_computer","path":"sprites/spr_computer/spr_computer.yy",},},
     {"id":{"name":"spr_cpuPlaceHolder","path":"sprites/spr_cpuPlaceHolder/spr_cpuPlaceHolder.yy",},},
+    {"id":{"name":"spr_creditsButton_hover","path":"sprites/spr_creditsButton_hover/spr_creditsButton_hover.yy",},},
+    {"id":{"name":"spr_creditsButton","path":"sprites/spr_creditsButton/spr_creditsButton.yy",},},
     {"id":{"name":"spr_E","path":"sprites/spr_E/spr_E.yy",},},
     {"id":{"name":"spr_GameOver_text","path":"sprites/spr_GameOver_text/spr_GameOver_text.yy",},},
     {"id":{"name":"spr_grn_rift_close","path":"sprites/spr_grn_rift_close/spr_grn_rift_close.yy",},},
